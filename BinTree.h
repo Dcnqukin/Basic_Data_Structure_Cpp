@@ -105,11 +105,7 @@ BinTree<T>* BinTree<T>::secede(BinNodePosi(T) x){
 	return S;
 }
 
-<<<<<<< HEAD
 //递归版遍历
-=======
-//遍历
->>>>>>> 05694cf2cda5b4104ebcbfaa1a7ee0ae26d606db
 template <typename T, typename VST>
 void travPre_R(BinNodePosi(T) x, VST& visit){//递归版先序遍历 
 	if(!x) return;
@@ -132,11 +128,7 @@ void travPost_R(BinNodePosi(T) x, VST& visit){//递归版后序遍历
 	visit(x->data);
 }
 template <typename T, typename VST>
-<<<<<<< HEAD
 void travLevel(BinNodePosi(T) x, VST& visit){//利用队列实现层次遍历 
-=======
-void travLevel(BinNodePosi(T) x, VST& visit){
->>>>>>> 05694cf2cda5b4104ebcbfaa1a7ee0ae26d606db
 	queue<BinNodePosi(T)> q;
 	q.push(this);
 	while(!q.empty()){
@@ -146,7 +138,7 @@ void travLevel(BinNodePosi(T) x, VST& visit){
 		if(HasRchild(*x)) q.push(x->rchild);
 	}
 }
-<<<<<<< HEAD
+
 //迭代版遍历 
 //PreOrder_Iteration
 template <typename T, typename VST>
@@ -206,5 +198,4 @@ void travPost_I(BinNodePosi(T) x, VST& visit){//利用栈实现后序遍历
 		x = S.pop(); visit(x->data);
 	}
 }
-=======
->>>>>>> 05694cf2cda5b4104ebcbfaa1a7ee0ae26d606db
+
