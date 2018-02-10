@@ -88,6 +88,7 @@ void BinNode<T>::travPost(VST& visit){
 		default: travPost_R(this, visit);
 	}
 }
+<<<<<<< HEAD
 //定位节点v的直接后继 
 template <typename T> BinNodePosi(T) BinNode<T>::succ(){
 	BinNodePosi(T) s = this;
@@ -100,4 +101,6 @@ template <typename T> BinNodePosi(T) BinNode<T>::succ(){
 	}
 	return s;
 }
+=======
+>>>>>>> 05694cf2cda5b4104ebcbfaa1a7ee0ae26d606db
 
